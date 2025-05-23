@@ -7,7 +7,7 @@
 <html lang="ko">
 <head>
 <!-- 기타 공통 스타일 -->
-  <link rel="stylesheet" href="http://192.168.10.72/jsp_prj/project/common.css">
+  <link rel="stylesheet" href="/GungOn/common/css/common.css">
   <link rel="stylesheet" type="text/css"
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -25,7 +25,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
 </head>
 <body>
 
-<c:import url="http://localhost/jsp_prj/project/mainpage/header.jsp"/>
+<jsp:include page="/common/jsp/header.jsp"/>
 
 <h2 style="width: 100%; padding-left: 20px; text-align: center;">예약내역 변경/취소</h2>
 
@@ -134,7 +134,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
 
 </div>
 
-<c:import url="http://localhost/jsp_prj/project/mainpage/footer.jsp"/>
+<jsp:include page="/common/jsp/footer.jsp"/>
 
 </body>
 </html>

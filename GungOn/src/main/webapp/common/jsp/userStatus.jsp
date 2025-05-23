@@ -10,19 +10,19 @@
 	  String loginUser = ((MemberDTO)session.getAttribute("userData")).getId() ;
 	  System.out.print(loginUser);
   %>
-    <div class="user-status-logged-in">
+    <div class="user-status-logged-in" style="position: relative; right: 40px;">
       <span class="user-name"><strong><%= loginUser %></strong>님</span>
-      <a href="http://localhost/jsp_prj/project/mypage/mypage.jsp"><img src="http://192.168.10.72/jsp_prj/common/images/user_profile.png">
+      <a href="/GungOn/mypage/mypage.jsp"><img src="/GungOn/common/images/mainpage/user_profile.png">
       <strong>  마이페이지</strong></a>
-      <a href="#"><img src="http://192.168.10.72/jsp_prj/common/images/logout.png">
+      <a href="#"><img src="/GungOn/common/images/mainpage/logout.png">
       <strong>  로그아웃</strong></a>
     </div> 
   <% } else { %>
-    <div class="user-status-guest">
-      <a href="http://localhost/jsp_prj/project/singup/sign_up.jsp"><img src="http://localhost/jsp_prj/common/images/user_profile.png">
+    <div class="user-status-guest" style="position: relative; right: 40px;">
+      <a href="/GungOn/signup/sign_up.jsp"><img src="/GungOn/common/images/mainpage/user_profile.png">
       <strong>  회원가입</strong></a>
-      <a href="http://localhost/jsp_prj/project/login/login.jsp"><span class="login-icon"><i class="fa fa-user"></i></span>
-      <img src="http://localhost/jsp_prj/common/images/login.png"><strong>  로그인</strong></a>
+      <a href="/GungOn/login/login.jsp"><span class="login-icon"><i class="fa fa-user"></i></span>
+      <img src="/GungOn/common/images/mainpage/login.png"><strong>  로그인</strong></a>
       
     </div>
   <% } %>

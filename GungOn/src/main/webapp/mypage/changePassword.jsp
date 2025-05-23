@@ -4,11 +4,11 @@
 <html>
 <head>
     <title>비밀번호 변경</title>
-    <link rel="stylesheet" href="http://192.168.10.72/jsp_prj/project/common.css">
+     <link rel="stylesheet" href="/GungOn/common/css/common.css">
 </head>
 <body class="login">
 <!-- 상단 메뉴 등 -->
-  <c:import url="http://localhost/jsp_prj/project/mainpage/header.jsp"/>
+  <jsp:include page="/common/jsp/header.jsp"/>
 <div class="login-container" style="width: 450px; height: 350px;">
     <h2>비밀번호 변경</h2>
     <form action="login.do" method="post">
@@ -20,6 +20,6 @@
 
 </div>
 <!-- 푸터 -->
-  <c:import url="http://localhost/jsp_prj/project/mainpage/footer.jsp"/>
+  <jsp:include page="/common/jsp/footer.jsp"/>
 </body>
 </html>

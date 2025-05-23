@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"
     info=""%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:import url="http://192.168.10.72/jsp_prj/common/jsp/external_file.jsp" />
 <style>
   .header-nav-link {
   font-size: 20px;
@@ -10,10 +9,10 @@
 </style>
 
   <!-- 사용자 상태 표시 영역 -->
-<div class="user-status-bar">
-  <jsp:include page="userStatus.jsp"></jsp:include>
+<div class="user-status-bar" >
+  <jsp:include page="/common/jsp/userStatus.jsp"/>
 </div>
-<link rel="stylesheet" href="http://192.168.10.72/jsp_prj/project/common.css">
+<link rel="stylesheet" href="/GungOn/common/css/common.css">
 <!-- 헤더 네비게이션 -->
 <div class="header">
   <nav class="header-nav">
@@ -37,7 +36,7 @@
         </ul>
       </li>
       <li class="header-nav-item">
-       <a href="http://localhost/jsp_prj/project/mainpage/mainpage.jsp"> <img src="http://192.168.10.72/jsp_prj/common/images/icon.png" alt="로고"></a>
+       <a href="/GungOn/mainpage/mainpage.jsp"> <img src="/GungOn/common/images/mainpage/header_icon.png" alt="로고"></a>
       </li>
       <li class="header-nav-item">
         <a href="http://192.168.10.73/jsp_prj/project/course_rule.jsp" class="header-nav-link">관람 안내</a>

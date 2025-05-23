@@ -5,12 +5,11 @@
 <head>
   <meta charset="UTF-8">
   <title>궁온 메인</title>
-	<link rel="shortcut icon" href="http://192.168.10.72/jsp_prj/common/images/favicon.ico"/>
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <!-- 기타 공통 스타일 -->
-  <link rel="stylesheet" href="http://192.168.10.72/jsp_prj/project/common.css">
+  <link rel="stylesheet" href="/GungOn/common/css/common.css">
   <link rel="stylesheet" type="text/css"
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -23,7 +22,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
   
 <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script src="http://localhost/jsp_prj/project/slide.js"></script>
+	<script src="/GungOn/common/js/slide.js"></script>
   <script>
     
   </script>
@@ -31,7 +30,9 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
 <body class="main">
 
   <!-- 상단 메뉴 등 -->
-  <jsp:include page="../common/jsp/header.jsp"></jsp:include>
+  
+  <jsp:include page="/common/jsp/header.jsp" />
+
 
   <!-- 본문: 캐러셀 포함 -->
   <main>
@@ -42,20 +43,20 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
 	</div>
 
     <div> 
-    <c:import url="http://localhost/jsp_prj/project/mainpage/banner.jsp"/>
+    <jsp:include page="/mainpage/banner.jsp"/>
     </div>
     
-    <div class= "banner2-main">
-	<c:import url="http://localhost/jsp_prj/project/mainpage/banner2.jsp"/>
+    <div class= "/mainpage/banner2-main">
+	<jsp:include page="/mainpage/banner2.jsp"/>
     </div>
     
     <div style="padding-left: 300px; padding-right: 300px">
-    <jsp:include page="mainboard.jsp" />
+    <jsp:include page="/mainpage/mainboard.jsp" />
     </div>
   </main>
 
   <!-- 푸터 -->
-  <c:import url="http://localhost/jsp_prj/project/mainpage/footer.jsp"/>
+   <jsp:include page="/common/jsp/footer.jsp"/>
 <!-- <div> 아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/mike-zuidgeest" title="Mike Zuidgeest"> Mike Zuidgeest </a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com'</a></div> -->
 </body>
 </html>

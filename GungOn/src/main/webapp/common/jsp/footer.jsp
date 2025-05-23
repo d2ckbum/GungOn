@@ -2,14 +2,13 @@
     pageEncoding="UTF-8"
     info=""%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:import url="http://192.168.10.72/jsp_prj/common/jsp/external_file.jsp" />
 
 
 <!-- 푸터 -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-logo">
-      <img src="http://192.168.10.72/jsp_prj/common/images/gungon.png" alt="궁온 로고">
+      <img src="/GungOn/common/images/mainpage/footer_icon.png" alt="궁온 로고">
       <br>
     </div>
     <div class="footer-menus">

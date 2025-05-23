@@ -7,10 +7,11 @@
 <head>
 <meta charset="UTF-8">
 <title>SEARCH - 아이디 찾기 / 비밀번호 찾기</title>
+<link rel="stylesheet" href="/GungOn/common/css/common.css">
 </head>
 <body class="page-body">
 	<!-- 상단 메뉴 등 -->
-<c:import url="http://localhost/jsp_prj/project/mainpage/header.jsp"/>
+<jsp:include page="/common/jsp/header.jsp"/>
 	<div class="search-container">
 		<h1 class="title">
 			<strong>아이디 찾기  /  비밀번호 찾기</strong>
@@ -44,6 +45,6 @@
 		</div>
 	</div>
 	<!-- 푸터 -->
-	<c:import url="http://localhost/jsp_prj/project/mainpage/header.jsp"/>
+<jsp:include page="/common/jsp/footer.jsp"/>
 </body>
 </html>

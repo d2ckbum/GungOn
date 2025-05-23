@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
     <title>로그인</title>
-    <link rel="stylesheet" href="http://192.168.10.72/jsp_prj/project/common.css">
+    <link rel="stylesheet" href="/GungOn/common/css/common.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
     window.onload = function() {
@@ -46,7 +46,7 @@
             dataType: "json",
             success: function(jsonObj) {
                 if (jsonObj.loginResult) {
-                    location.href = "http://localhost/jsp_prj/project/mainpage/mainpage.jsp"; // 로그인 성공 시 이동할 페이지
+                    location.href = "/GungOn/mainpage/mainpage.jsp"; // 로그인 성공 시 이동할 페이지
                 } else {
                 	alert("아이디나 비밀번호를 확인해주세요.");
                 }//end else
@@ -60,7 +60,7 @@
     </script>
 </head>
 <body class="login">
-<c:import url="http://localhost/jsp_prj/project/mainpage/header.jsp"/>
+ <jsp:include page="/common/jsp/header.jsp"/>
 
 <div class="login-container">
     <h2>로그인</h2>
@@ -73,13 +73,13 @@
 
     <div class="link-container">
         <div class="link-box">
-            <a href="searchAccount.jsp" style="margin-right: 20px;">아이디/비밀번호 찾기</a>
+            <a href="/GungOn/mypage/searchAccount.jsp" style="margin-right: 20px;">아이디/비밀번호 찾기</a>
             <span class="divider"></span>
-            <a href="sign_up.jsp" style="margin-left: 10px;">회원가입</a>
+            <a href="/GungOn/signup/sign_up.jsp" style="margin-left: 10px;">회원가입</a>
         </div>
     </div>
 </div>
 
-<c:import url="http://localhost/jsp_prj/project/mainpage/footer.jsp"/>
+ <jsp:include page="/common/jsp/footer.jsp"/>
 </body>
 </html>

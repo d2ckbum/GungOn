@@ -5,9 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <title>마이페이지</title>
-  <link rel="shortcut icon" href="http://localhost/jsp_prj/common/images/favicon.ico"/>
   <!-- 기타 공통 스타일 -->
-  <link rel="stylesheet" href="http://localhost/jsp_prj/project/common.css">
+  <link rel="stylesheet" href="/GungOn/common/css/common.css">
 
   
 
@@ -30,7 +29,7 @@
 </head>
 <body>
 
-<c:import url="http://localhost/jsp_prj/project/mainpage/header.jsp"/>
+<jsp:include page="/common/jsp/header.jsp"/>
 
 <!-- ✅ 탭 버튼 -->
 <div class="tab-container" style="position: relative; right: 70px">
@@ -41,7 +40,7 @@
 
 <!-- ✅ 탭 내용 1: 회원정보수정 -->
 <div id="info-tab" class="tab-content" style="position: relative; right: 70px">
-  <form method="post" action="process.jsp" class="signup-form" style="width: 900px;">
+  <form method="post" action="/GungOn/process.jsp" class="signup-form" style="width: 900px;">
     <table class="signup-table">
       <tr>
         <th>아이디</th>
@@ -115,7 +114,7 @@
     </table>
   </form>
 </div>
-<c:import url="http://localhost/jsp_prj/project/mainpage/footer.jsp"/>
+<jsp:include page="/common/jsp/footer.jsp"/>
 
 </body>
 </html>

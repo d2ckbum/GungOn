@@ -4,15 +4,15 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="http://192.168.10.72/jsp_prj/common/images/favicon.ico"/>
+  <link rel="stylesheet" href="/GungOn/common/css/common.css">
   <title>회원가입</title>
 </head>
 
   <body class="signup-body">
 
-<c:import url="http://localhost/jsp_prj/project/mainpage/header.jsp"/>
+<jsp:include page="/common/jsp/header.jsp"/>
 
-  <form method="post" action="sign_up_process.jsp" class="signup-form">
+  <form method="post" action="/GungOn/singup/sign_up_process.jsp" class="signup-form">
     
     <!-- 약관 -->
     <div class="terms-box">
@@ -100,6 +100,6 @@
   </form>
   
   <!-- 푸터 -->
-<c:import url="http://localhost/jsp_prj/project/mainpage/footer.jsp"/>
+<jsp:include page="/common/jsp/footer.jsp"/>
 </body>
 </html>

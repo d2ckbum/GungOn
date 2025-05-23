@@ -6,8 +6,8 @@
   <div class="swiper-wrapper">
 <div class="custom-banner-controls">
   <div class="page-info"><span id="page-now">1</span>/<span id="page-total">5</span></div>
-  <img src="http://192.168.10.72/jsp_prj/common/images/left-button.png" style="cursor: pointer;" class="custom-prev"/>
-  <img src="http://192.168.10.72/jsp_prj/common/images/right-button.png" style="cursor: pointer;" class="custom-next"/>
+  <img src="${pageContext.request.contextPath}/common/images/mainpage/left-button.png" style="cursor: pointer;" class="custom-prev"/>
+  <img src="${pageContext.request.contextPath}/common/images/mainpage/right-button.png" style="cursor: pointer;" class="custom-next"/>
 </div>
     <div class="swiper-slide">
       <a href="palaceInfo.jsp?name=gyeongbokgung" class="slide-link">
