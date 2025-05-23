@@ -7,6 +7,7 @@
   <title>마이페이지</title>
   <!-- 기타 공통 스타일 -->
   <link rel="stylesheet" href="/GungOn/common/css/common.css">
+  <c:import url="/common/jsp/external_file.jsp"/>
 
   
 

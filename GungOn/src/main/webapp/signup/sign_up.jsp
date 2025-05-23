@@ -4,6 +4,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <c:import url="/common/jsp/external_file.jsp"/>
   <link rel="stylesheet" href="/GungOn/common/css/common.css">
   <title>회원가입</title>
 </head>

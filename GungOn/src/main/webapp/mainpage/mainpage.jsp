@@ -6,13 +6,12 @@
   <meta charset="UTF-8">
   <title>궁온 메인</title>
   <!-- Swiper CSS -->
+  <c:import url="/common/jsp/external_file.jsp"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <!-- 기타 공통 스타일 -->
   <link rel="stylesheet" href="/GungOn/common/css/common.css">
-  <link rel="stylesheet" type="text/css"
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+ 
   
   <!-- <style>
   .header-nav-link {

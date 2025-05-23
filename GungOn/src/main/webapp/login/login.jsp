@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
     <title>로그인</title>
+    <c:import url="/common/jsp/external_file.jsp"/>
     <link rel="stylesheet" href="/GungOn/common/css/common.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
