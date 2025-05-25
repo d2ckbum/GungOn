@@ -13,7 +13,7 @@
 
 <jsp:include page="/common/jsp/header.jsp"/>
 
-  <form method="post" action="/GungOn/singup/sign_up_process.jsp" class="signup-form">
+  <form method="post" action="/GungOn/signup/sign_up_process.jsp" class="signup-form">
     
     <!-- 약관 -->
     <div class="terms-box">
