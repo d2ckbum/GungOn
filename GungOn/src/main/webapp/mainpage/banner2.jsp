@@ -7,7 +7,7 @@
         <!-- 설명 -->
         <div class="poster-description2">
             <h3>포스터 설명</h3>
-            <p>왼쪽 강조 포스터에 대한 설명이 이 영역에 나오며,<br>JS로 변경 가능합니다.</p>
+            <p id="poster-desc-text">왼쪽 강조 포스터에 대한 설명이 이 영역에 나오며,<br>JS로 변경 가능합니다.</p>
         </div>
 
         <!-- 캐러셀 -->
@@ -25,7 +25,7 @@
     </div>
 
     <div class="poster-index2">
-        <span id="current-index">1</span> / 10
+        <span id="current-index">1</span> / 5
     </div>
 </div>
 

@@ -11,53 +11,48 @@
 </div>
     <div class="swiper-slide">
       <a href="palaceInfo.jsp?name=gyeongbokgung" class="slide-link">
-        <div class="banner-slide" style="background-image: url('http://192.168.10.72/jsp_prj/common/images/gyeongbokgung.jpg');">
+      	<img class="banner-slide" src="/GungOn/common/images/gung/gyeongbokgung/gyeongbokgung.jpg"/>
+      </a>
           <div class="banner-text" style="margin-left:200px">
             <p class="sub-title">Gyeongbokgung Palace</p>
             <h2>경복궁</h2>
           </div>
-        </div>
-      </a>
     </div>
     <div class="swiper-slide">
       <a href="palaceInfo.jsp?name=gyeonghuigung" class="slide-link">
-        <div class="banner-slide" style="background-image: url('http://192.168.10.72/jsp_prj/common/images/gyeonghuigung.jpg');">
+      	<img class="banner-slide" src="/GungOn/common/images/gung/gyeonghuigung/gyeonghuigung.jpg"/>
+      </a>
           <div class="banner-text" style="margin-left:200px">
             <p class="sub-title">Gyeonghuigung Palace</p>
             <h2>경희궁</h2>
           </div>
-        </div>
-      </a>
     </div>
     <div class="swiper-slide">
       <a href="palaceInfo.jsp?name=changdeokgung" class="slide-link">
-        <div class="banner-slide" style="background-image: url('http://192.168.10.72/jsp_prj/common/images/changdeokgung.jpg');">
+      	<img class="banner-slide" src="/GungOn/common/images/gung/changdeokgung/changdeokgung.jpg"/>
+      </a>
           <div class="banner-text" style="margin-left:200px">
             <p class="sub-title">Changdeokgung Palace</p>
             <h2>창덕궁</h2>
-          </div>
         </div>
-      </a>
     </div>
     <div class="swiper-slide">
       <a href="palaceInfo.jsp?name=changgyeonggung" class="slide-link">
-        <div class="banner-slide" style="background-image: url('http://192.168.10.72/jsp_prj/common/images/changgyeonggung.jpg');">
+      	<img class="banner-slide" src="/GungOn/common/images/gung/changgyeonggung/changgyeonggung.jpg"/>
+      </a>
           <div class="banner-text" style="margin-left:200px">
             <p class="sub-title">Changgyeonggung Palace</p>
             <h2>창경궁</h2>
           </div>
-        </div>
-      </a>
     </div>
     <div class="swiper-slide">
       <a href="palaceInfo.jsp?name=deoksugung" class="slide-link">
-        <div class="banner-slide" style="background-image: url('http://192.168.10.72/jsp_prj/common/images/deoksugung.jpg');">
+      	<img class="banner-slide" src="/GungOn/common/images/gung/deoksugung/deoksugung.jpg"/>
+      </a>
           <div class="banner-text" style="margin-left:200px">
             <p class="sub-title">Deoksugung Palace</p>
             <h2>덕수궁</h2>
           </div>
-        </div>
-      </a>
     </div>
   </div>
 </div>

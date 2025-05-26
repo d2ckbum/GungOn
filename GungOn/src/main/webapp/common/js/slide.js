@@ -35,21 +35,57 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevBtn2 = document.getElementById("prev-btn");
   const nextBtn2 = document.getElementById("next-btn");
 
-  const max2 = 10;
-  let current2 = 1;
+  
+  
+  const palaceMap = new Map();
+  palaceMap.set("ChangdeokgungMoonlightTravel", "changdeokgung");
+  palaceMap.set("Changgyeonggungnight", "changgyeonggung");
+  palaceMap.set("DeoksugungNightSeokjojeonHall", "deoksugung");
+  palaceMap.set("Gyeongbokgungnighttour", "gyeongbokgung");
+  palaceMap.set("GyeongbokgungStarlightNight", "gyeongbokgung");
+  
+  const imageFiles2 = [
+    "ChangdeokgungMoonlightTravel.jpg",
+    "Changgyeonggungnight.png",
+    "DeoksugungNightSeokjojeonHall.jpg",
+    "Gyeongbokgungnighttour.jpg",
+    "GyeongbokgungStarlightNight.jpg"
+  ];
+  
   let autoSlideTimer2 = null;
   const autoSlideDelay2 = 4000;
+  const max2 = imageFiles2.length;
+  let current2 = 1;
 
   function createPoster2(index, position) {
     const div = document.createElement("div");
     div.className = "poster2 " + position;
+
+    const fileKey = imageFiles2[index - 1].split('.')[0]; // 확장자 제거
+    const palaceName = palaceMap.get(fileKey) || "unknown"; // 매핑 없을 경우 대비
+
+    const link = document.createElement("a");
+    link.href = "palaceInfo.jsp?name=" + palaceName;
+
     const img = document.createElement("img");
-    img.src = "/gungon/images/program/" + index + ".jpg";
+    img.src = "/GungOn/common/images/program/" + imageFiles2[index - 1];
     img.alt = "포스터 " + index;
-    div.appendChild(img);
+
+    link.appendChild(img);
+    div.appendChild(link);
+
     return div;
   }
 
+
+  const posterDescriptions = {
+    "Gyeongbokgungnighttour": "경복궁 야간 특별관람은 아름다운 조명 아래 고궁의 밤을 감상할 수 있는 특별한 기회입니다.",
+    "GyeongbokgungStarlightNight": "경복궁 별빛야행은 궁중 문화와 공연을 함께 즐길 수 있는 전통 야간행사입니다.",
+    "ChangdeokgungMoonlightTravel": "창덕궁 달빛기행은 달빛 아래 후원을 거니는 특별한 체험 행사입니다.",
+    "Changgyeonggungnight": "창경궁 야간 개방은 조용하고 운치 있는 분위기 속에서 궁을 감상할 수 있습니다.",
+    "DeoksugungNightSeokjojeonHall": "덕수궁 석조전 야간관람은 대한제국의 역사와 서양식 건축을 경험할 수 있는 기회입니다."
+  };
+  
   function updatePosters2() {
     const next = current2 === max2 ? 1 : current2 + 1;
     posterTrack2.innerHTML = "";
@@ -57,6 +93,10 @@ document.addEventListener("DOMContentLoaded", function () {
     posterTrack2.appendChild(createPoster2(next, "right"));
     posterTrack2.style.transform = "translateX(0px)";
     indexDisplay2.textContent = current2;
+	
+	const fileKey = imageFiles2[current2 - 1].split('.')[0];
+	const desc = posterDescriptions[fileKey] || "해당 포스터에 대한 설명이 없습니다.";
+	document.getElementById("poster-desc-text").innerHTML = desc;
   }
 
   function slideTo2(direction) {
